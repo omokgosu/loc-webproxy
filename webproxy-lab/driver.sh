@@ -142,7 +142,7 @@ function free_port {
 #
 
 # Kill any stray proxies or tiny servers owned by this user
-killall -q proxy tiny nop-server.py 2> /dev/null
+killall -q ./.proxy tiny nop-server.py 2> /dev/null
 
 # Make sure we have a Tiny directory
 if [ ! -d ./tiny ]
